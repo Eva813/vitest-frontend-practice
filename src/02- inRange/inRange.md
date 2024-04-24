@@ -19,3 +19,10 @@ inRange(4, 2)     // => false
 inRange(2, 2)     // => false
 inRange(1.2, 2)   // => true
 ```
+
+是判定 value 是否在 start, end 之間？
+若參數僅傳入 2 個並不會報錯，預設 start: 0 
+
+Math.min(start, end)：這個函數返回 start 和 end 中的最小值。如果 start 是 10，end 是 5，則 Math.min(start, end) 會返回 5，這個值將作為範圍的下界。
+Math.max(start, end)：這個函數返回 start 和 end 中的最大值。如果 start 是 10，end 是 5，則 Math.max(start, end) 會返回 10，這個值將作為範圍的上界。
+比較：通過確保 value 大於或等於最小值並且小於最大值，確保 value 是否正確地落在指定的範圍內。
